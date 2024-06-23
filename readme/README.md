@@ -1,7 +1,7 @@
 
 # Experiment on distributed RocksDB via YCSB
-This code is our project for big data system course, which teached by
-[Shimin Chen](https://acs.ict.ac.cn/english/people_acs_en/researcher_acs_en/202302/t20230201_126786.html)
+This code is our project for big data system course, which teached by Shimin Chen.
+
 
 ## Intro
 Since RocksDB is an embedded database, we build up middle layer between YCSB and 
