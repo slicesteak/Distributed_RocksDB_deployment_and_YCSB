@@ -7,7 +7,7 @@ This code is our project for big data system course, which teached by Shimin Che
 Since RocksDB is an embedded database, we build up middle layer between YCSB and 
 RocksDB for network communication. Our whole project is shown as followed:
 
-![](./imgs/rocksdb_framework.png)
+![](../imgs/rocksdb_framework.png)
 
 We use sharding policy to distribute key by its hash code. When YCSB need to `read`(or `insert`, `delete` and `update`) key hashed to local node, it will access the rocksdb directly. And when the key is hash to remote node, it will forward request to SpringBoot Client, which will send HTTP request to remote SpringBoot Server to get the result. SpringBoot server has a simple rocksdb driver and operates rocksdb based on the HTTP request and it will respond results via HTTP.
 
